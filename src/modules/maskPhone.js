@@ -30,12 +30,13 @@ const maskPhone = (
   };
 
   const defaultStyle = () => {
-    event.target.classList.remove('mask__error-input');
+    event.target.classList.add('mask__error-input');
     event.target.classList.add('mask__default-input');
   };
 
   const success = () => {
     event.target.classList.remove('mask__error-input');
+    event.target.classList.remove('mask__default-input');
     event.target.classList.add('mask__success-input');
   };
 
